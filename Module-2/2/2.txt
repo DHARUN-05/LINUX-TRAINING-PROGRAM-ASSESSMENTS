@@ -1,0 +1,5 @@
+2) Replace all occurrences of "localhost" with "127.0.0.1" in a configuration file named config.txt, and save the updated file as updated_config.txt.
+
+Answer:
+nano config.txt
+sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt

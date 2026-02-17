@@ -1,0 +1,3 @@
+server=localhost
+db=localhost
+url=http://localhost:8080
