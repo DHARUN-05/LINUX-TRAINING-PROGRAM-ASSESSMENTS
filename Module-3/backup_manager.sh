@@ -1,27 +1,27 @@
 #!/bin/bash
 
-# Check if 3 arguments are given
+# Check if 3 arguments is given by user
 if [ $# -ne 3 ]; then
     echo "Usage: $0 <source_dir> <backup_dir> <extension>"
     exit 1
 fi
 
-# Assign arguments
+# Assigning the arguments
 SOURCE_DIR="$1"
 BACKUP_DIR="$2"
 EXT="$3"
 
-# Initialize backup count
+# Initializing backup count globally
 export BACKUP_COUNT=0
 TOTAL_SIZE=0
 
-# Check if source directory exists
+# source directory exist check
 if [ ! -d "$SOURCE_DIR" ]; then
     echo "Error: Source directory does not exist."
     exit 1
 fi
 
-# Create backup directory if not exists
+# Creating backup directory if not exists
 if [ ! -d "$BACKUP_DIR" ]; then
     mkdir -p "$BACKUP_DIR"
     if [ $? -ne 0 ]; then
@@ -53,7 +53,8 @@ done
 echo "Starting backup..."
 
 # Backup process
-for file in "${FILES[@]}" ; do
+for file in "${FILES[@]}"
+do
     filename=$(basename "$file")
     dest="$BACKUP_DIR/$filename"
 
@@ -81,7 +82,7 @@ for file in "${FILES[@]}" ; do
 
 done
 
-# Create report
+# Creating backup report
 REPORT_FILE="$BACKUP_DIR/backup_report.log"
 
 echo "Backup Summary Report" > "$REPORT_FILE"
