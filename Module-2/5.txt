@@ -1,0 +1,5 @@
+5) Use the networking tool command and print all the gateway available in a sorted manner.
+
+Answer:
+ip route | grep default | sort
+default via 10.157.26.221 dev wlp0s20f3 proto dhcp metric 600 
