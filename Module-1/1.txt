@@ -1,0 +1,9 @@
+1) Create a file and add executable permission to all users (user, group and others)
+
+Answer:
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ touch hello.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ chmod a+x hello.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ ls -l hello.txt
+-rwxrwxr-x 1 dharun dharun 0 Jan 29 13:23 hello.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ 
+
