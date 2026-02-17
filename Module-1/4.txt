@@ -1,0 +1,13 @@
+4) Use ps command with options to display all active process running on the system.
+
+Answer:
+ps aux 
+
+Example :
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 168384 11560 ?        Ss   21:48   0:01 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    21:48   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   21:48   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   21:48   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   21:48   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   21:48   0:00 [netns]

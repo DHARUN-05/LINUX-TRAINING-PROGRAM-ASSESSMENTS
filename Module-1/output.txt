@@ -1,0 +1,5 @@
+total 0
+-rw-rw-r-- 1 dharun dharun 0 Jan 29 16:15 output.txt
+-rw-rw-r-- 1 dharun dharun 0 Jan 29 16:15 file3.txt
+-rw-rw-r-- 1 dharun dharun 0 Jan 29 16:15 file2.txt
+-rw-rw-r-- 1 dharun dharun 0 Jan 29 16:14 file1.txt

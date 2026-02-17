@@ -1,0 +1,9 @@
+2) Create a file and remove write permission for group user alone.
+
+Answer:
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ touch example.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ chmod g-w example.txt 
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ ls -l example.txt 
+-rw-r--r-- 1 dharun dharun 0 Jan 29 15:40 example.txt
+
+

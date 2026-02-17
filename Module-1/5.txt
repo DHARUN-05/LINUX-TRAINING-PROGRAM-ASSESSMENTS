@@ -1,0 +1,13 @@
+5) Create 3 files in a dir1 and re-direct the output of list command with sorted by timestamp of the files to a file.
+
+Answer:
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ mkdir dir1
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ cd dir1/
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~/dir1$ touch file1.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~/dir1$ touch file2.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~/dir1$ touch file3.txt
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~/dir1$ ls -lt dir1 > output.txt
+ls: cannot access 'dir1': No such file or directory
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~/dir1$ cd ..
+dharun@dharun-Victus-by-HP-Gaming-Laptop-15-fa0xxx:~$ ls -lt dir1 > output.txt
+
